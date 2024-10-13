@@ -1,0 +1,908 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PremierSans-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;;
+
+}
+
+nav {
+    width: 85%;
+    margin-left: 11%;
+    margin-right: 5%;
+    position: relative;
+
+}
+nav .club-logos {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+nav .club-logos h5 {
+    width: 15%;
+    margin-right: 10px;
+    color: rgb(97, 97, 97);
+}
+nav .club-logos a img {
+    width: 70%;
+    /* padding: 5px; */
+    transition: transform .2s;
+}
+nav .club-logos a img:hover {
+    transform: scale(1.2);
+}
+.nav-container .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(55, 0, 60);
+    align-items: center;
+    margin-bottom: 40px;
+}
+.nav-container .main-nav .logo {
+    width: 13%;
+    margin-right: 3%;
+    position: absolute;
+}
+.nav-container .main-nav .logo img {
+    width: 50%;
+    margin-left: 20px; 
+
+}
+.nav-container .main-nav .bars {
+    display: none;
+}
+.nav-container .main-nav .nav-items {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-left: 12%;
+
+}
+.nav-container .main-nav  li {
+    color: white;
+    margin-right: 5%;
+    padding: 20px;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+main {
+    width: 100%;
+}
+body main .fantasy {
+    width: 100%;
+
+    background-image: url(../images/player-comp-2-1x.55cfdac8.png) 
+    , linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+    background-position:95%;
+    background-repeat: no-repeat;
+    height: fit-content;
+    /* padding-top: 50px; */
+
+}
+
+.fantasy-contain {
+    display: flex ;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-bottom: 2%;
+    padding-top: 3%;
+    background-image:  url(../images/pattern-2-d.0a64c7c7.png);
+    background-repeat: no-repeat;
+    height: fit-content;
+    background-position: 60%;
+}
+.fantasy-contain img#players {
+    display: none;
+}
+.fantasy-contain .fantasy-photo {
+    display: flex;
+    align-items: center;
+    width: 35%;
+
+}
+
+.fantasy-photo img {
+    width: 40%
+}
+.fantasy-photo h1 {
+    font-size: 90px;
+    color: rgb(55, 0, 60);
+    font-weight: bold;
+}
+.fantasy-players {
+    width: 30%;
+    /* background-image: url(../images/player-comp-2-1x.55cfdac8.png);
+    background-repeat: no-repeat;
+    height: 200px; */
+}
+/* .fantasy-players img {
+    margin-right: 20px;
+} */
+
+.fantasy-btns {
+    margin-left: 5%;
+    width: 95%;
+    /* background-image: url(../images/player-comp-2-1x.55cfdac8.png);
+    background-repeat: no-repeat;
+    height: 200px;
+     */
+}
+.fantasy-btns button {
+    padding: 18px;
+    background-color: rgb(47, 255, 134);
+    color: rgb(55, 0, 60);
+    border-radius: 5px 5px 0px 0px  ;
+    border: none;
+    font-weight: bold;
+}
+.fantasy-btns button:hover {
+    cursor: pointer;
+}
+.fantasy-btns button#points {
+    background-color: white;
+}
+.fantasy-btns button#challenge {
+    background-color: mediumorchid;
+    color: white;
+}
+.ad {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.squad {
+    width: 75%;
+}
+.squad h3 {
+    color: rgb(55, 0, 60);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.squad img {
+    width: 100%;
+}
+.rank {
+    width: 23%;
+}
+ .points {
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: 0px center, right top, 0px center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0.2) 30px, white 60px), url(/static/media/pattern-2-crop-90.0e86ae39.png), linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+    box-shadow: rgba(107, 107, 107, 0.08) 0px 8px 12px 0px;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+ .points .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: rgb(55, 0, 60);
+}
+ .points .head .name h5 {
+    font-weight: normal;
+}
+ .points .data ul {
+    padding: 10px;
+}
+ .points .data ul li {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(128, 128, 128, 0.164);
+    margin: 10px 0px ;
+}
+ .points .data ul li button {
+    color: aquamarine;
+    background-color: rgb(55, 0, 60);
+    padding: 5px;
+    border:none;
+    border-radius: 0px 0px 5px 5px ;
+    width: 50%;
+    font-weight: bold;
+}
+ .points .data ul li p {
+    color: rgb(55, 0, 60);
+    font-size: 14px;
+    margin-top: 10px;
+}
+ .points .data ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(55, 0, 60);
+}
+ .points .data ul li a:hover {
+    text-decoration: underline turquoise;
+}
+
+
+
+
+.calender .points {
+    background-image: url(/static/media/pattern-2-crop-184.d7588c45.png), linear-gradient(rgba(255, 255, 255, 0) 80px, white 160px), linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+        background-size: 90px 60px, auto, auto;
+    }
+.calender .points .head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);;
+    align-items: center;
+}
+.calender .points .head .left {
+    display: flex;
+    align-items: center;
+}
+.calender .points .head .left img {
+    width: 30%;
+}
+.calender .points .head .right {
+    display: flex;
+    align-items: center;
+}
+.calender .points .head .right button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);;
+    color: rgb(55, 0, 60);
+    font-weight: bold;
+}
+.calender .points .head button.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);;
+    color: rgb(55, 0, 60);
+    font-weight: bold;
+    width: 10%;
+}
+.calender .points .head button:hover {
+    cursor: pointer;
+}
+.calender .points p.time {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(55, 0, 60);
+    padding-top: 5px;
+}
+/*-------------Accordion----------*/
+
+.accordion .accordionBtn {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: white;
+    border-bottom: 1px solid #80808071;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+}
+.accordion .accordionBtn .icon  {
+    width: 25%;
+    text-align: start;
+    align-items: center;
+    display: flex;
+}
+.accordion .accordionBtn .btn-contain {
+    display: flex ;
+}
+.accordion .accordionBtn .result {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    color: rgb(55, 0, 60);
+}
+.accordion .accordionBtn .result p {
+    width: 25%;
+}
+.accordion .accordionBtn .result span {
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: rgb(55, 0, 60);
+    color: white;
+    border-radius: 5px;
+    margin: 0px 5px;
+
+}
+.accordion .accordionBtn .result  img {
+    width: 8%;
+    margin: 0px 10px 0px 10px;
+}
+.accordion .accordionBtn .bein {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+.accordion .accordionBtn .bein img {
+    width: 35%;
+}
+.accordion .accordionBtn .btn-contain .icon i {
+
+    transition: transform 0.5s;
+    
+}
+.accordion .accordion-body {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: rgb(55, 0, 60);
+
+
+
+}
+.accordion .accordion-body span {
+    background : linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+    padding: 2px 40%;
+    color: rgb(55, 0, 60);
+    font-weight: bold;
+
+}
+.accordion .accordion-body span.assist {
+    padding: 2px 39%;
+}
+
+
+.kit .points .head .name h3 {
+    margin-top:5% ;
+}
+.kit .points .data {
+    margin-top: 20px;
+    display: flex;
+}
+.kit .points .data img {
+    width: calc(100%/3);
+    height: 25vh;
+}
+.kit .points .design {
+    padding: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.164);
+
+}
+.kit .points .design a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(55, 0, 60);
+    padding-top: 10px;
+}
+.kit .points .design a:hover {
+    text-decoration: underline turquoise;
+}
+ .points .head .name h3 {
+    margin-top:5% ;
+}
+.fan .points .data {
+    align-items: center;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.fan .points .data img {
+    width: 40%;
+}
+.fan .points .design {
+    padding: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.164);
+
+}
+.fan .points .design a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(55, 0, 60);
+    padding-top: 10px;
+}
+.fan .points .design a:hover {
+    text-decoration: underline turquoise;
+}
+
+.league .points .data ul li i.red  {
+    color: red;
+    margin-top: 10px;
+
+}
+.league .points .data ul li button {
+    width: 60%;
+}
+.league .points .data ul li p {
+    width: 40%;
+}
+.admin .points .data ul li a {
+    font-weight: bold;
+}
+
+@media (max-width: 1365px){
+    .fantasy-btns button#challenge {
+        display: none;
+    }
+}
+@media (max-width: 1215px){
+    .fantasy-btns button#help {
+        display: none;
+    }
+}
+@media (max-width: 1140px){
+    .fantasy-btns button#prize {
+        display: none;
+    }
+    .nav-container .main-nav {
+        margin-bottom: 20px;
+
+    }
+    body main .fantasy {
+        width: 100%;
+    
+        background-image: url(../images/player-comp-2-1x.55cfdac8.png) 
+        , linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+
+        padding-top: 0px;
+    
+    }
+    .fantasy-contain {
+        display: flex ;
+        justify-content: space-between;
+        padding-left: 3%;
+        padding-bottom: 2%;
+        padding-top: 4%;
+        background-image:  url(../images/pattern-2-d.0a64c7c7.png);
+        background-blend-mode: lighten;
+        background-repeat: no-repeat;
+        height: max-content;
+        background-position: 60%;
+    }
+}
+@media (max-width: 1050px){
+    .fantasy-btns button#stats {
+        display: none;
+    }
+
+    body main .fantasy {
+        width: 100%;
+    
+        background-image: url(../images/player-comp-2-1x.55cfdac8.png) 
+        , linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+        background-position:95%;
+        background-repeat: no-repeat;
+        height: fit-content;
+        padding-top: 0px;
+    
+    }
+}
+@media (max-width: 970px){
+    .fantasy-btns button#podcast {
+        display: none;
+    }
+
+    body main .fantasy {
+        width: 100%;
+    
+        background-image: url(../images/player-comp-2-1x.55cfdac8.png) 
+        , linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+        background-position:95%;
+        background-repeat: no-repeat;
+        height: fit-content;
+        padding-top: 0px;
+    
+    }
+}
+@media (max-width: 899px) {
+    nav {
+        display: none;
+        
+    }
+    .nav-container .main-nav {
+        margin-bottom: 0px;
+
+    }
+    .nav-container .main-nav .nav-items {
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    .nav-container .main-nav .bars {
+        display: block;
+        color: white;
+        margin-right: 5%;
+    }
+    .nav-container .main-nav .bars i {
+        font-size: 20px;
+    }
+    .nav-container .main-nav .logo {
+        position:relative;
+    }
+
+    
+    
+    body main .fantasy {
+        width: 100%;
+    
+        background:  
+         linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+        background-position:100%;
+
+        background-repeat: no-repeat;
+
+
+
+    }
+
+    .fantasy-contain {
+        display: flex;
+
+        padding-left: 3%;
+        padding-bottom: 2%;
+        padding-top: 4%;
+        background-image: url(../images/player-comp-2-1x.55cfdac8.png) ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right 2rem bottom;
+    background-size: 25% 100%;
+
+
+
+    }
+
+.ad {
+    display: none;
+}
+
+    .fantasy-contain .fantasy-photo {
+        display: flex;
+        align-items: center;
+        width: 15%;
+    }
+    
+    .fantasy-photo img {
+        width: 40%
+    }
+    .fantasy-photo h1 {
+        font-size: 35px;
+
+    }
+
+    
+    .fantasy-btns {
+        margin-left: 2%;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .fantasy-btns button {
+        padding: 14px;
+        background-color: rgb(47, 255, 134);
+        color: rgb(55, 0, 60);
+        border-radius: 5px 5px 0px 0px  ;
+        border: none;
+        font-weight: bold;
+    }
+
+    .fantasy-btns button#podcast {
+        display: inline-block;
+    }
+
+/*---------------------------------body*/
+.content {
+    width: 95%;
+    margin: auto;
+    display: block;
+}
+.squad {
+    width: 100%;
+}
+.squad h3 {
+    color: rgb(55, 0, 60);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.squad img {
+    width: 100%;
+}
+.rank {
+    width: 100%;
+}
+
+.kit .points .data img {
+    width: calc(100%/3);
+    height: 100%;
+}
+
+.accordion .accordionBtn .result {
+
+    font-size: 16px;
+
+}
+.accordion .accordionBtn .result span {
+    font-size: 16px;
+    padding: 6px 16px;
+}
+.accordion .accordionBtn .bein img {
+    width: 50%;
+}
+}
+@media (max-width: 827px){
+    .fantasy-btns button#scout {
+        display: none;
+    }
+
+    .accordion .accordionBtn .result {
+
+        font-size: 14px;
+    
+    }
+    .accordion .accordionBtn .result span {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+    .accordion .accordionBtn .result {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+
+    }
+    .accordion .accordionBtn .result p {
+        width: 20%;
+    }
+
+
+    .accordion .accordionBtn .bein {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+    .accordion .accordionBtn .icon  {
+        width: 20%;
+        text-align: start;
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media (max-width: 720px){
+    .fantasy-btns button#podcast {
+        display: none;
+    }
+    .squad h3 {
+
+        font-size: 20px;
+
+    }
+
+}
+@media (max-width: 626px){
+    .fantasy-btns button#fixtures {
+        display: none;
+    }
+
+
+}
+@media (max-width: 544px){
+    .fantasy-btns button#leagues {
+        display: none;
+    }
+
+    .fantasy-photo img {
+        width: 50%
+    }
+    .fantasy-photo h1 {
+        font-size: 30px;
+
+    }
+    .fantasy-btns button {
+        padding: 14px 22px;
+
+    }
+}
+@media (max-width: 500px){
+    .accordion .accordionBtn .result {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+
+    }
+    .accordion .accordionBtn .result p {
+        width: 20%;
+    }
+
+
+    .accordion .accordionBtn .bein {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+    }
+
+    .accordion .accordionBtn .icon  {
+        width: 15%;
+        text-align: start;
+        align-items: center;
+        display: flex;
+    }
+    .accordion .accordionBtn .result span {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    .accordion .accordionBtn .bein img {
+        width: 70%;
+    }
+}
+@media (max-width: 486px){
+
+
+    .fantasy-photo img {
+        width: 50%
+    }
+    .fantasy-photo h1 {
+        font-size: 30px;
+
+    }
+    .fantasy-btns button {
+        padding: 14px 18px;
+
+    }
+
+
+    .accordion .accordion-body {
+        font-size: 14px;
+        width: 80%;
+
+    }
+    .accordion .accordion-body span {
+        background : linear-gradient(to right, rgb(2, 239, 255), rgb(98, 123, 255));
+        padding: 2px 40%;
+        color: rgb(55, 0, 60);
+        font-weight: bold;
+    
+    }
+
+}
+@media (max-width: 445px){
+
+
+    .fantasy-photo img {
+        width: 50%
+    }
+    .fantasy-photo h1 {
+        font-size: 30px;
+
+    }
+    .fantasy-btns button {
+        padding: 14px;
+
+    }
+}
+@media (max-width: 411px){
+
+
+    .fantasy-photo img {
+        width: 60%
+    }
+    .fantasy-photo h1 {
+        font-size: 30px;
+
+    }
+    .fantasy-btns button {
+        padding: 14px 10px;
+
+    }
+}
+@media (max-width: 370px){
+
+
+    .fantasy-photo img {
+        width: 60%
+    }
+    .fantasy-photo h1 {
+        font-size: 30px;
+
+    }
+    .fantasy-btns button {
+        padding: 10px 5px;
+
+    }
+
+    .accordion .accordionBtn .result {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+
+    }
+    .accordion .accordionBtn .result p {
+        width: 20%;
+    }
+
+
+    .accordion .accordionBtn .bein {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+    }
+
+    .accordion .accordionBtn .icon  {
+        width: 10%;
+        text-align: start;
+        align-items: center;
+        display: flex;
+    }
+    .accordion .accordionBtn .result span {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+
+
+
+
+
+    .calender .points .head .left img {
+        width: 20%;
+    }
+    .calender .points .head .right {
+        display: flex;
+        align-items: center;
+    }
+    .calender .points .head .right button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.6);;
+        color: rgb(55, 0, 60);
+        font-weight: bold;
+    }
+    .calender .points .head p {
+        font-size: 14px;
+    }
+    .calender .points .head button.btn {
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.6);;
+        color: rgb(55, 0, 60);
+        font-weight: bold;
+        width: 15%;
+    }
+    .calender .points .head button:hover {
+        cursor: pointer;
+    }
+    .calender .points p.time {
+        text-align: center;
+        font-size: 12px;
+        color: rgb(55, 0, 60);
+        padding-top: 5px;
+    }
+}
+@media (max-width: 370px) {
+    .fantasy-btns button#transfers {
+        display: none;
+    }
+}
